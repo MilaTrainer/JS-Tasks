@@ -7,10 +7,19 @@
 * Задавать количество чисел, которые нужно вывести, 
 при помощи функции prompt.
 */
-const num = prompt("How many numbers' squares you want to calculate 0 - 10?");
-for (let i = 0; i < 100; i++) {
+const num = Number(prompt("How many numbers' squares you want to calculate?", 1));
+for (let i = 0; i < num; i++) {
     let result = i ** 2;
-    if (i < num && result) {
+    if (i < num && result < 100) {
+        console.log(result);
+    }
+}
+
+// второй вариант
+const num1 = Number(prompt("How many numbers' squares you want to calculate?", 1));
+for (let i = 0; i < num; i++) {
+    let result = i ** 2;
+    if (i < num1 && result < 100) {
         console.log(result);
     }
 }

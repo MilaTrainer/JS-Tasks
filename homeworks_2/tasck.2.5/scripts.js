@@ -11,6 +11,13 @@
 Если число кратно и 3, и 5, 
 то программа должна выводить слово «FizzBuzz»
 */
+const num = prompt('Please, write a number');
 
-for (let i = 0; i < 100; i++)
-    if (
+for (let i = 1; i < 100; i++)
+    if (i % 3 && i % 5) {
+        console.log('FizzBuzz');
+    } else if (i % 3 == 0) {
+    console.log('Fizz');
+} else if (i % 5 == 0) {
+    console.log('Buzz');
+}

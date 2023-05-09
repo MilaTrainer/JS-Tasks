@@ -23,3 +23,21 @@ return Math.floor(Math.random() * (max - min)) + min;
 Одна функция может вызывать другую функцию
 
 */
+let i = 0;
+//let rgb = (rgb(10, 55, 250));
+
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function getRandomRGB() {
+    const r = getRandomInteger(0, 255)
+    const g = getRandomInteger(0, 255)
+    const b = getRandomInteger(0, 255)
+
+    //return 'rgb(' + r + ',' + g + ',' + b + ')';
+
+
+    //return `rgb(${getRandomInteger(0, 255)})`
+    return `rgb (${r}, ${g}, ${b})`
+}

@@ -97,7 +97,7 @@ console.log(userObject.ValidDate['login-1'])
 //     newUserObject.age = 20;
 
 //можно сделать через цикл поверхностное копирование
-// for in -для обектов
+// for in -для обектов (1.спооб поверхностного копирования)
 for (let key1 in userObject) {
     console.log(userObject[key1]);
 }
@@ -119,6 +119,11 @@ for (let key2 in userObject) {
 console.log(userObject);
 console.log(cloneuserObject);
 console.log(cloneuserObject == userObject);
+
+// 2 способ поверхносного копировния
+const cloneOBJ = {...userObject };
+
+console.log(cloneOBJ);
 
 
 
